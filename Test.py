@@ -1,10 +1,11 @@
 import unittest
-from Enregistrement import assemblement, separation
+from Lecture import *
 
 
 class MyTestCase(unittest.TestCase):
     def test_something(self):
-        self.assertListEqual(separation("salut au revoir bonne nuit"), [["au", "salut"], ["revoir", "au"], ["bonne", "revoir"], ["nuit", "bonne"]])
+        statistique(['test'], 1)
+        self.assertListEqual(separation(True, True))
 
 
 if __name__ == '__main__':
